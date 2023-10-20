@@ -1,4 +1,9 @@
+<!-- markdownlint-disable MD033 -->
+<!-- ![Downloads](https://img.shields.io/github/gianmarco-mameli/PackerParallelsBuild/total)  -->
+
 # Packer build with Parallels Desktop and Vagrant
+
+![Contributors](https://img.shields.io/github/contributors/gianmarco-mameli/PackerParallelsBuild?style=plastic) ![Forks](https://img.shields.io/github/forks/gianmarco-mameli/PackerParallelsBuild?style=plastic) ![Stargazers](https://img.shields.io/github/stars/gianmarco-mameli/PackerParallelsBuild?style=plastic) ![Issues](https://img.shields.io/github/issues/gianmarco-mameli/PackerParallelsBuild?style=plastic) ![License](https://img.shields.io/github/license/gianmarco-mameli/PackerParallelsBuild?style=plastic)
 
 I created this project to help me build a master Operating System image for my lab, running on Parallels Desktop and provisionable with Vagrant.
 The build runs entirely on Parallels and at the end creates a BOX file deployable with Vagrant
@@ -71,3 +76,8 @@ Feel free to open issues or requests if you find bugs or feature lack
 - [Packer Vagrant plugin](https://github.com/hashicorp/packer-plugin-vagrant)
 - [Cloud-Init](https://cloudinit.readthedocs.io/en/latest/)
 - [Debian Preseed](https://wiki.debian.org/DebianInstaller/Preseed)
+
+### Support
+
+<a href="https://www.buymeacoffee.com/app/gianmarcomameli"> <img src="https://cdn.simpleicons.org/buymeacoffee" alt="buymeacoffe" height="32" /></a>
+<a href="https://ko-fi.com/gianmarcomameli"> <img src="https://cdn.simpleicons.org/kofi" alt="kofi" height="32"/></a>
