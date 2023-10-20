@@ -1,0 +1,8 @@
+.DS_Store
+.sensitive.pkr.hcl
+.vagrant
+.vscode
+*.box
+backup
+scratchpad
+Vagrantfile
