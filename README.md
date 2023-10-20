@@ -1,13 +1,13 @@
 # Packer build with Parallels Desktop and Vagrant
 
 I created this project to help me build a master Operating System image for my lab, running on Parallels Desktop and provisionable with Vagrant.
-The build runs entirely on Parallels and a the end creates a BOX file deployable with Vagrant
+The build runs entirely on Parallels and at the end creates a BOX file deployable with Vagrant
 
-At the moment the config is ready to build a Debian Bookworm image with arm64 architecture, beacause my base lab is a Mac Mini M2 Pro
+At the moment the config is ready to build a Debian Bookworm image with arm64 architecture, my base lab is a Mac Mini M2 Pro
 
 ## Requirements
 
-Before you can build you need to install packer; in my case I used the official docs that use Homebrew [link](https://developer.hashicorp.com/packer/downloads?product_intent=packer)
+Before start build you need to install Packer; in my case I used the official docs that use Homebrew on MacOS [link](https://developer.hashicorp.com/packer/downloads?product_intent=packer)
 
 You also need Parallels Desktop Pro installed and already configured [link](https://www.parallels.com/products/desktop/pro/). At the moment I'm not sure that is possible to use Parallels Desktop Standard for using the Packer provider
 
@@ -49,13 +49,13 @@ packer fmt .
 
 ## Customization
 
-This project is fresh and customized to my necessities so I reccomend you to check all the passages I implemented before launch.
+This project is written keeping in mind my necessities so I reccomend you to check all the passages I implemented before launch.
 For example I use a customized preseed file, cloud-init installation and configuration, Parallels Tools installation.
-Also it's structured to permmit multiple dynamic build, with disk variants and os variants.
+Also it's structured to permit multiple dynamic build, with disk variants and os distributions.
 
 ## Issues, bugs, requests, collaboration
 
-Feel free to open issues or requests, fork and customize the project
+Feel free to open issues or requests if you find bugs or feature lack
 
 ## Next steps
 
