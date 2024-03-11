@@ -3,7 +3,7 @@ variables {
   box_output_dir = "/Users/gnammyx/Parallels"
   country        = "IT"
   cpus           = 1
-  disk_size      = 30000
+  disk_size      = 40000
   disk_type      = "plain"
   domain         = ""
   keyboard       = "it"
