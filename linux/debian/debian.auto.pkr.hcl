@@ -6,7 +6,7 @@ variables {
   disk_size      = 40000
   disk_type      = "plain"
   domain         = ""
-  keyboard       = "it"
+  keyboard       = "us"
   language       = "en"
   locale         = "en_US.UTF-8"
   memory         = 2048
