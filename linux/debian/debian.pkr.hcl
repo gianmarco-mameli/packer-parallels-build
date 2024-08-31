@@ -104,7 +104,7 @@ build {
   provisioner "shell" {
     execute_command = "echo '${var.ssh_password}' | {{ .Vars }} sudo -E -S '{{ .Path }}'"
     inline = [
-      "cloud-init status --wait",
+      "cloud-init clean --seed --machine-id --logs",
       "cloud-init clean",
       ":> /root/.bash_history",
       "apt-get -y autoremove --purge",
