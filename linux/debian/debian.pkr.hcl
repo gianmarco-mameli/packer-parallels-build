@@ -107,7 +107,7 @@ build {
       "cloud-init clean --seed --machine-id --logs",
       "cloud-init clean",
       # "userdel ${var.ssh_username}",
-      "rm -rf /etc/sudoers.d/${var.ssh_username}",
+      # "rm -rf /etc/sudoers.d/${var.ssh_username}",
       ":> /root/.bash_history",
       "apt-get -y autoremove --purge",
       "apt-get autoclean",
