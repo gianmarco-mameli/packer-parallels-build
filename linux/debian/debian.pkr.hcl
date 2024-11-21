@@ -79,8 +79,7 @@ build {
       "apt-get update",
       "apt-get install -y cloud-init",
       "wget http://${build.PackerHTTPIP}:${build.PackerHTTPPort}/cloud.cfg -O /etc/cloud/cloud.cfg",
-      "wget http://${build.PackerHTTPIP}:${build.PackerHTTPPort}/99-disable-network-config.cfg -O /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg",
-      "cloud-init status"
+      "wget http://${build.PackerHTTPIP}:${build.PackerHTTPPort}/99-disable-network-config.cfg -O /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg"
     ]
   }
 
@@ -104,8 +103,11 @@ build {
   provisioner "shell" {
     execute_command = "echo '${var.ssh_password}' | {{ .Vars }} sudo -E -S '{{ .Path }}'"
     inline = [
+      "cloud-init status --wait",
       "cloud-init clean --seed --machine-id --logs",
       "cloud-init clean",
+      # "userdel ${var.ssh_username}",
+      # "rm -rf /etc/sudoers.d/${var.ssh_username}",
       ":> /root/.bash_history",
       "apt-get -y autoremove --purge",
       "apt-get autoclean",

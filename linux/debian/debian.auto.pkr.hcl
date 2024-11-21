@@ -25,7 +25,7 @@ locals {
       distribution           = "bookworm"
       guest_os_type          = "debian"
       parallels_tools_flavor = "lin-arm"
-      version                = "12.6.0"
+      version                = "12.8.0"
       disk_variants = {
         // lvm = "lvm"
         ext4 = "regular"
