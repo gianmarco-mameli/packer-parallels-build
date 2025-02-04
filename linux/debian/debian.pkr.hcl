@@ -68,7 +68,7 @@ build {
     expect_disconnect = true
     inline = [
       "apt-get update",
-      "apt-get -y dist-upgrade",
+      "apt-get -y full-upgrade",
     ]
   }
 
