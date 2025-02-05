@@ -30,7 +30,12 @@ build {
       vm_name                    = source.value.name
       prlctl = [
         ["set", "{{.Name}}", "--3d-accelerate", "off"],
-        ["set", "{{.Name}}", "--adaptive-hypervisor", "on"]
+        ["set", "{{.Name}}", "--adaptive-hypervisor", "on"],
+        ["set", "{{.Name}}", "--smart-mouse-optimize", "off"],
+        ["set", "{{.Name}}", "--keyboard-optimize", "off"],
+        ["set", "{{.Name}}", "--sync-host-printers", "off"],
+        ["set", "{{.Name}}", "--device-del", "sound0"],
+        ["set", "{{.Name}}", "--time-sync", "off"],
       ]
       prlctl_post = [
         ["set", "{{.Name}}", "--device-del", "net0"],
@@ -112,6 +117,7 @@ build {
       "apt-get -y autoremove --purge",
       "apt-get autoclean",
       "apt-get clean",
+      "echo 'uninitialized' > /etc/machine-id",
       "dd if=/dev/zero of=/EMPTY bs=1M count=100",
       "rm -f /EMPTY",
       "sync"
