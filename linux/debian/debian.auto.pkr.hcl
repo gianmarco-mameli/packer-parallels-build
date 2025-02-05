@@ -3,8 +3,8 @@ variables {
   box_output_dir = "/Users/gnammyx/Parallels"
   country        = "IT"
   cpus           = 1
-  disk_size      = 40000
-  disk_type      = "plain"
+  disk_size      = 51200
+  disk_type      = "expand"
   domain         = ""
   keyboard       = "us"
   language       = "en"
@@ -25,7 +25,7 @@ locals {
       distribution           = "bookworm"
       guest_os_type          = "debian"
       parallels_tools_flavor = "lin-arm"
-      version                = "12.8.0"
+      version                = "12.9.0"
       disk_variants = {
         // lvm = "lvm"
         ext4 = "regular"
