@@ -28,7 +28,7 @@ locals {
       version                = "12.9.0"
       disk_variants = {
         // lvm = "lvm"
-        ext4 = "regular"
+        plain = "regular"
       }
     }
     // bullseye = {}
